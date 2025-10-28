@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Banking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container" id="loginScreen">
+    <h2>Online Banking Login</h2>
+    <input type="password" id="pinInput" placeholder="Enter PIN">
+    <br>
+    <button onclick="verifyPin()">Login</button>
+    <p id="loginMsg"></p>
+  </div>
+
+  <div class="container menu" id="menuScreen">
+    <h2>Welcome, Ankush</h2>
+    <button onclick="checkBalance()">Check Balance</button><br>
+    <button onclick="showDeposit()">Deposit</button><br>
+    <button onclick="showWithdraw()">Withdraw</button><br>
+    <button onclick="logout()">Logout</button>
+    <p id="message"></p>
+  </div>
+
+  <div class="container operations" id="depositScreen">
+    <h2>Deposit Money</h2>
+    <input type="number" id="depositAmount" placeholder="Enter amount">
+    <br>
+    <button onclick="deposit()">Confirm Deposit</button>
+    <button onclick="goBack()">Back</button>
+    <p id="depositMsg"></p>
+  </div>
+
+  <div class="container operations" id="withdrawScreen">
+    <h2>Withdraw Money</h2>
+    <input type="number" id="withdrawAmount" placeholder="Enter amount">
+    <br>
+    <button onclick="withdraw()">Confirm Withdraw</button>
+    <button onclick="goBack()">Back</button>
+    <p id="withdrawMsg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
